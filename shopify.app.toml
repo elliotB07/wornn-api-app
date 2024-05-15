@@ -3,7 +3,7 @@
 client_id = "84110c3505903abd146f459f2aff7709"
 name = "wornn re-sell repair recycle"
 handle = "wornn-re-sell-repair-recycle"
-application_url = "https://sake-journey-fully-pregnancy.trycloudflare.com"
+application_url = "https://moved-unit-enters-philosophy.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://sake-journey-fully-pregnancy.trycloudflare.com/auth/callback",
-  "https://sake-journey-fully-pregnancy.trycloudflare.com/auth/shopify/callback",
-  "https://sake-journey-fully-pregnancy.trycloudflare.com/api/auth/callback"
+  "https://moved-unit-enters-philosophy.trycloudflare.com/auth/callback",
+  "https://moved-unit-enters-philosophy.trycloudflare.com/auth/shopify/callback",
+  "https://moved-unit-enters-philosophy.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
