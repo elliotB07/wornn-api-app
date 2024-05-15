@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "84110c3505903abd146f459f2aff7709"
+name = "wornn re-sell repair recycle"
+handle = "wornn-re-sell-repair-recycle"
+application_url = "https://sake-journey-fully-pregnancy.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "wornn-test-store.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://sake-journey-fully-pregnancy.trycloudflare.com/auth/callback",
+  "https://sake-journey-fully-pregnancy.trycloudflare.com/auth/shopify/callback",
+  "https://sake-journey-fully-pregnancy.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
