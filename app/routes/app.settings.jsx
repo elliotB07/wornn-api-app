@@ -19,7 +19,7 @@ export default function SettingsPage() {
   const { smUp } = useBreakpoints();
   return (
     <Page>
-      <TitleBar title="Settings" />
+      <TitleBar title="Settings this is a test" />
       <BlockStack gap={{ xs: "800", sm: "400" }}>
         <InlineGrid columns={{ xs: "1fr", md: "2fr 5fr" }} gap="400">
           <Box

@@ -1,9 +1,9 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "84110c3505903abd146f459f2aff7709"
-name = "wornn re-sell repair recycle"
+name = "Wornn API Connect"
 handle = "wornn-re-sell-repair-recycle"
-application_url = "https://moved-unit-enters-philosophy.trycloudflare.com"
+application_url = "https://olympic-outline-bus-majority.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://moved-unit-enters-philosophy.trycloudflare.com/auth/callback",
-  "https://moved-unit-enters-philosophy.trycloudflare.com/auth/shopify/callback",
-  "https://moved-unit-enters-philosophy.trycloudflare.com/api/auth/callback"
+  "https://olympic-outline-bus-majority.trycloudflare.com/auth/callback",
+  "https://olympic-outline-bus-majority.trycloudflare.com/auth/shopify/callback",
+  "https://olympic-outline-bus-majority.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
