@@ -1,9 +1,6 @@
 import {
   Box,
   Card,
-  Layout,
-  Link,
-  List,
   Page,
   Text,
   BlockStack,
@@ -18,13 +15,15 @@ import { useState } from "react";
 import { json } from "@remix-run/node";
 import { useLoaderData, Form } from "@remix-run/react";
 
+// import prisma db
+import db from "../db.server";
 
 export async function loader() {
   // provides data to the component
-  let settings = {
-    name: "My app name",
-    description: "My app description"
-  }
+  let settings = await db.settings.findFirst();
+
+  console.log('settings -->', settings);
+
   return json(settings);
 }
 
@@ -32,6 +31,9 @@ export async function action({request}) {
   // updates persistent data
   let settings = await request.formData();
   settings = Object.fromEntries(settings);
+
+  // update database
+  
 
   return json(settings);
 }
@@ -64,8 +66,8 @@ export default function SettingsPage() {
           <Card roundedAbove="sm">
             <Form method = "POST">
             <BlockStack gap="400">
-              <TextField label="App name" name="name for app" value= {formState.name} onChange={(value) => setFormState({...formState, name: value})}/>
-              <TextField label="Description" name="description for app" value= {formState.description} onChange={(value) => setFormState({...formState, description: value})}/>
+              <TextField label="App name" name="name for app" value= {formState?.name} onChange={(value) => setFormState({...formState, name: value})}/>
+              <TextField label="Description" name="description for app" value= {formState?.description} onChange={(value) => setFormState({...formState, description: value})}/>
             </BlockStack>
             <button submit = {true}>Save</button>
             </Form>
